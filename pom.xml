@@ -6,12 +6,103 @@
     <groupId>io.nxnet.html2adoc</groupId>
     <artifactId>html2adoc</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    
     <name>html2adoc</name>
     <description>Java API for HTML to AsciiDoc Conversion</description>
+    <url>http://github.com/nxnet/html2adoc</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/nxnet/html2adoc</url>
+        <connection>scm:git:git://github.com/nxnet/html2adoc.git</connection>
+    </scm>
+    
+    <developers>
+        <developer>
+            <id>nruzic</id>
+            <name>Nikola Ruzic</name>
+            <email>nruzic.nxnet@gmail.com</email>
+            <url>https://github.com/nruzic</url>
+            <organization>NxNet</organization>
+            <organizationUrl>http://www.nxnet.io</organizationUrl>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>${version-maven-source-plugin}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${version-maven-javadoc-plugin}</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>net.sourceforge.htmlunit</groupId>
+                <artifactId>htmlunit</artifactId>
+                <version>${version-htmlunit}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.sourceforge.htmlunit</groupId>
+            <artifactId>htmlunit</artifactId>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+        <version-maven-source-plugin>3.0.1</version-maven-source-plugin>
+        <version-maven-javadoc-plugin>2.10.4</version-maven-javadoc-plugin>
+        <version-htmlunit>2.23</version-htmlunit>
     </properties>
   
 </project>
