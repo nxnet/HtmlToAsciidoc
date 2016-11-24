@@ -1,0 +1,35 @@
+= html2adoc
+
+Java API for HTML to ASCIIDOC Conversion.
+
+This project is a fork of https://github.com/asciidocfx/HtmlToAsciidoc[HtmlToAsciidoc] project
+and it is using its javascript library for HTML to ASCIIDOC conversion.
+The javascript library is wrapped in java API and run inside of JVM javascript engine.
+
+The final goal of this project is to provide fully flagged java implementation of HTML to ASCIIDOC converter
+and to define common java API for such converter and thus allowing different converter implementations
+for HTML to ASCIIDOC conversions, and possibly other markup conversions.
+
+== Installation
+
+Put html2adoc-[version].jar in your java project classpath.
+
+[source,bash]
+----
+mvn dependency:get -Dartifact io.nxnet.html2adoc:html2adoc:[version]
+----
+
+== Usage
+
+[source,java]
+----
+ConverterFactory.getFactory().getConverter("HTML", "ASCIIDOC").convert("");
+----
+
+== State
+
+This project is under active development.
+
+== Licence
+
+MIT
