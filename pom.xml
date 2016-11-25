@@ -19,8 +19,8 @@
 
     <scm>
         <url>http://github.com/nxnet/html2adoc</url>
-        <connection>https://github.com/nxnet/html2adoc.git</connection>
-        <developerConnection>http://github.com/nxnet/html2adoc.git</developerConnection>
+        <connection>scm:git:http://github.com/nxnet/html2adoc.git</connection>
+        <developerConnection>scm:git:https://github.com/nxnet/html2adoc.git</developerConnection>
       <tag>html2adoc-0.0.1</tag>
   </scm>
 
