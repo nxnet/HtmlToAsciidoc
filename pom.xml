@@ -22,7 +22,18 @@
         <url>https://github.com/nxnet/html2adoc</url>
         <connection>scm:git:git://github.com/nxnet/html2adoc.git</connection>
     </scm>
-    
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh-snapshot-repo</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh-staging-repo</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
     <developers>
         <developer>
             <id>nruzic</id>
