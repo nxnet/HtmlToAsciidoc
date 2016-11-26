@@ -2,10 +2,10 @@
 ####################
 .idea
 .svn/
-/target/
-/.settings/
-/.classpath
-/.project
+target/
+.settings/
+.classpath
+.project
 
 # Compiled source #
 ###################
