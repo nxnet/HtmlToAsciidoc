@@ -22,7 +22,7 @@
         <connection>scm:git:http://github.com/nxnet/html2adoc.git</connection>
         <developerConnection>scm:git:https://github.com/nxnet/html2adoc.git</developerConnection>
       <tag>html2adoc-0.0.1</tag>
-  </scm>
+    </scm>
 
     <distributionManagement>
         <snapshotRepository>
