@@ -4,7 +4,7 @@
     
     <groupId>io.nxnet.html2adoc</groupId>
     <artifactId>html2adoc</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2-RC1</version>
     
     <name>html2adoc</name>
     <description>Java API for HTML to AsciiDoc Conversion</description>
@@ -21,7 +21,7 @@
         <url>http://github.com/nxnet/html2adoc</url>
         <connection>scm:git:http://github.com/nxnet/html2adoc.git</connection>
         <developerConnection>scm:git:https://github.com/nxnet/html2adoc.git</developerConnection>
-      <tag>html2adoc-0.0.1</tag>
+      <tag>html2adoc-0.0.2-RC1</tag>
     </scm>
 
     <distributionManagement>
